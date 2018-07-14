@@ -29,20 +29,13 @@ public class Test {
         double dlugoscLine2 = lines.distance(line2);
 
         Line longer = lines.longerLine(line1, line2);
-        if (longer == line1) {
-            System.out.println("Linia 1 jest dłuższa");
-            System.out.println("Współrzędne początku to:" + " " + line1.p1.x + ',' + line1.p1.y);
-            System.out.println("Współrzędne końca to:" + " " + line1.p2.x + ',' + line1.p2.y);
-            System.out.println("Długość lini wynosi:" + " " + lines.distance(line1));
-        } else {
-            System.out.println("Linia 2 jest dłuższa");
-            System.out.println("Współrzędne początku to:" + " " + line2.p1.x + ',' + line2.p1.y);
-            System.out.println("Współrzędne końca to:" + " " + line2.p2.x + ',' + line2.p2.y);
-            System.out.println("Długość lini wynosi:" + " " + lines.distance(line2));
-
+            System.out.print("Najdłuższy odcinek ma długość:" + " " + lines.distance(longer) + ',');
+            System.out.print("rozpoczyna się w punkcie:" + " " + longer.getP1().x + ',' + longer.getP1().y + ',');
+            System.out.print("a kończy w:" + " " + longer.getP2().x + ',' + longer.getP2().y);
 
         }
+
     }
-}
+
 
 
