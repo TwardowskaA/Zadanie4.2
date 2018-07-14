@@ -2,7 +2,7 @@ public class Lines {
 
     public double distance(Line line) {
         double distance;
-        return Math.sqrt((line.getP1().x - line.getP2().x) * (line.getP1().x - line.getP2().x) + (line.getP1().y - line.getP2().y) * (line.getP1().y - line.getP2().y));
+        return Math.sqrt((line.getP1().getX() - line.getP2().getX()) * (line.getP1().getX() - line.getP2().getX()) + (line.getP1().getY() - line.getP2().getY()) * (line.getP1().getY() - line.getP2().getY()));
 
     }
 

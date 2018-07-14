@@ -30,8 +30,8 @@ public class Test {
 
         Line longer = lines.longerLine(line1, line2);
             System.out.print("Najdłuższy odcinek ma długość:" + " " + lines.distance(longer) + ',');
-            System.out.print("rozpoczyna się w punkcie:" + " " + longer.getP1().x + ',' + longer.getP1().y + ',');
-            System.out.print("a kończy w:" + " " + longer.getP2().x + ',' + longer.getP2().y);
+            System.out.print("rozpoczyna się w punkcie:" + " " + longer.getP1().getX() + ',' + longer.getP1().getY() + ',');
+            System.out.print("a kończy w:" + " " + longer.getP2().getX() + ',' + longer.getP2().getY());
 
         }
 
