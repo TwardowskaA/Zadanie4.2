@@ -14,7 +14,7 @@ public class Test {
         int x2 = input.nextInt();
         int y2 = input.nextInt();
 
-        System.out.println("Wprowadź współrzęde punktu p1 lini 2:");
+        System.out.println("Wprowadź współrzędne punktu p1 lini 2:");
         int a1 = input.nextInt();
         int b1 = input.nextInt();
         System.out.println("Wprowadź współrzędne punktu p2 lini 2:");
@@ -23,7 +23,14 @@ public class Test {
 
         Line line1 = new Line(x1, y1, x2, y2);
         Line line2 = new Line(a1, b1, a2, b2);
+
+        Lines lines = new Lines();
+        double dlugoscLine1 = lines.distance(line1);
+        double dlugoscLine2 = lines.distance(line2);
+
+        String longer = lines.longerLine(line1, line2);
+
+
     }
+
 }
-
-
